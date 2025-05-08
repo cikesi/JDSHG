@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="">
+    <title>中国反法西斯战争之黄冈抗日史</title>
+    <link rel="stylesheet" href="./CHpro2.css">
+</head>
+<body>
+    <div class="navbar"> 
+            <a class="navbar-img" href="https://www.1937china.com/"><img src="./微信图片_20250415195824.png" ></a>
+            <div class="navbar-brand">
+                <a href="">黄冈抗战史</a>
+            </div>
+            <div class="navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" @click="scrollTo('home')">黄冈英雄人物</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" @click="scrollTo('timeline')">黄冈抗战历程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" @click="scrollTo('battles')">黄冈重要战役</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" @click="scrollTo('heroes')">创意游戏：剧本杀</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+    <div class="bodyer">
+        <div class="section_inner_one">
+            <div class="index_hd">
+                <a>黄冈英雄人物</a>
+            </div>
+            <ul class="btnlist">
+                <span class="active" onclick="goToSlide(0)"></span>
+                <span onclick="goToSlide(1)"></span>
+                <span onclick="goToSlide(2)"></span>
+            </ul>
+            <button id="leftbtn" onclick="prevSlide()"><a>&lt;</a></button>
+            <button id="rightbtn" onclick="nextSlide()"><a>&gt;</a></button>
+                <div class="hezi1" id="box1">
+                    <div class="tupian">
+                        <div class="tupian1 active">
+                            <div class="one">
+                                <img src="./4785A0666ADF742B8936A8167FDEE118.jpg" alt="生米共创·我与周深同行的旅程">
+                            </div>
+                            <div class="two">
+                                <img src="./02F7E2F2F142ED6FA389F142D6A6EA3C.jpg" alt="节奏型轻音乐，工作效率up up！"> 
+                            </div>
+                            <div class="three">
+                                <img src="./7EDD2FA84C40A244166BE7AF61A26E13.jpg" alt="抖音最火：全网热播的流行歌">
+                            </div>
+                            <div class="four">
+                                <img src="./图片/董必武.webp" alt="岁月留刀：刀郎金曲全集">
+                            </div>
+                            <div class="five" style="margin-right: 0px;">
+                                <img src="./图片/李先念.webp" alt="高考年华|不负年华纪念励志青春">
+                            </div>
+                            <ul class="cwenzi1">
+                                <li><a href="https://baike.baidu.com/item/%E9%97%BB%E4%B8%80%E5%A4%9A/148101" class="renwulink">闻一多</a></li>
+                                <li><a class="renwulink" href="https://www.cas.cn/xzfc/201912/t20191217_4727858.shtml">李四光</a></li>
+                                <li><a class="renwulink" href="https://yswk.csdl.ac.cn/ys_detail?casid=1955A22">彭烜武</a></li>
+                                <li><a class="renwulink" href="https://news.hbtv.com.cn/p/1994625.html">董必武</a></li>
+                                <li><a class="renwulink" href="https://baike.baidu.com/item/%E6%9D%8E%E5%85%88%E5%BF%B5/115208">李先念</a></li>
+                            </ul>
+                            <ul class="dwenzi1">
+                                <li title="">浠水县巴河镇人</li>
+                                <li title="">团风县回龙山镇人</li>
+                                <li title="">麻城县王岗乡蔡家田垸</li>
+                                <li title="">黄安（今红安）县城关人</li>
+                                <li title="">黄冈（今红安）县詹店镇人</li>
+                            </ul>
+                        </div>
+                        <div class="tupian1">
+                            <div class="one">
+                                <img src="./图片/陈潭秋.webp" alt="">
+                                <div class="mengceng"></div>
+                            </div>
+                            <div class="two">
+                                <img src="./图片/林彪.webp" alt="">
+                                <div class="mengceng"></div>
+                            </div>
+                            <div class="three">
+                                <img src="./图片/韩先楚.webp" alt="">
+                            </div>
+                            <div class="four">
+                                <img src="./图片/陈锡联.jpeg" alt="">
+                                <div class="mengceng"></div>
+                            </div>
+                            <div class="five" style="margin-right: 0px;">
+                                <img src="./图片/林育南.webp" alt="">
+                                <div class="mengceng"></div>
+                            </div>
+                            <ul class="cwenzi1">
+                                <li><a class="renwulink" href="http://www.hgszw.cn/dsby/2023-04-28/1713.html">陈潭秋</a></li>
+                                <li><a class="renwulink" href="http://news.enorth.com.cn/system/2005/04/12/001003412.shtml">林 彪</a></li>
+                                <li><a class="renwulink" href="https://www.lssjt.com/people/jindai/19816.html">韩先楚</a></li>
+                                <li><a class="renwulink" href="https://zqb.cyol.com/content/2005-07/03/content_1138403.htm">陈锡联</a></li>
+                                <li><a class="renwulink" href="https://baike.baidu.com/item/%E6%9E%97%E8%82%B2%E5%8D%97/998348">林育南</a></li>
+                            </ul>
+                            <ul class="dwenzi1">
+                                <li title="">黄冈县（今黄州区）陈策楼人</li>
+                                <li title="">团风县回龙镇人</li>
+                                <li title="">红安县二程镇人</li>
+                                <li title="">红安县高桥镇人</li>
+                                <li title="">团风县回龙镇人</li>
+                            </ul>
+                        </div>
+                        <div class="tupian1">
+                            <div class="one">
+                                <img src="./图片/秦基伟.webp" alt="">
+                                <div class="mengceng"></div>
+                            </div>
+                            <div class="two">
+                                <img src="./图片/王树声.webp" alt="">
+                                <div class="mengceng"></div>
+                            </div>
+                            <div class="three">
+                                <img src="./图片/刘华清.webp" alt="">
+                            </div>
+                            <div class="four">
+                                <img src="./图片/周纯全.webp" alt="">
+                                <div class="mengceng"></div>
+                            </div>
+                            <div class="five" style="margin-right: 0px;">
+                                <img src="./图片/徐深吉.webp" alt="">
+                                <div class="mengceng"></div>
+                            </div>
+                            <ul class="cwenzi1">
+                                <li><a class="renwulink" href="https://baike.baidu.com/item/%E7%A7%A6%E5%9F%BA%E4%BC%9F/827704">秦基伟</a></li>
+                                <li><a class="renwulink" href="https://baike.baidu.com/item/%E7%8E%8B%E6%A0%91%E5%A3%B0/2596">王树声</a></li>
+                                <li><a class="renwulink" href="https://www.workercn.cn/32821/201901/14/190114143217447.shtml">刘华清</a></li>
+                                <li><a class="renwulink" href="https://baike.baidu.com/item/%E5%91%A8%E7%BA%AF%E5%85%A8/747992">周纯全</a></li>
+                                <li><a class="renwulink" href="https://baike.baidu.com/item/%E5%BE%90%E6%B7%B1%E5%90%89/836869">徐深吉</a></li>
+                            </ul>
+                            <ul class="dwenzi1">
+                                <li title="">红安县七里坪镇人</li>
+                                <li title="">麻城市乘马岗人</li>
+                                <li title="">红安县人</li>
+                                <li title="">红安县八里湾人</li>
+                                <li title="">红安县七里坪区人</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div> 
+        <div class="section_inner_two">
+            <h2 class="index_hg">黄冈抗战历程</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">1937年7月—1938年6月</div>
+                        <a class="kangzhan" href="https://www.krzzjn.com/show-917-106210.html"><h3>抗日救亡运动兴起</h3></a>
+                        <p>黄冈各县成立“抗日动员委员会”，组织宣传队、募捐队支援前线。
+
+                            国共合作在黄冈初步形成，中共黄冈中心县委恢复活动。</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">1938年6月—10月</div>
+                        <a class="kangzhan" href="https://news.hubeidaily.net/pc/c_3473112.html"><h3>武汉会战与黄冈沦陷</h3></a>
+                        <p>广济田家镇战役（1938年9月）：国军在武穴田家镇要塞阻击日军，激战月余，最终失守。</p>
+                        <p>黄梅阻击战：国军与日军在黄梅展开拉锯战，迟滞日军进攻武汉。</p>
+                        <p>10月24日：日军占领黄州，黄冈全境沦陷</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">1939年—1940年</div>
+                        <a class="kangzhan" href="http://www.hbdsw.org.cn/dsyj/201607/t4532716_1.shtml"><h3>敌后游击战与根据地初创</h3></a>
+                        <p>1939年5月：新四军进入鄂东
+
+                            新四军游击第六大队（后编入第五师）进入黄安（今红安）、麻城，建立游击区。</p>
+                            
+                        <P>    1939年9月：浠水三角山战斗
+                            
+                            新四军在浠水三角山伏击日军，毙伤敌数十人，打响黄冈敌后抗战第一枪。</P>
+                            
+                           <p> 1940年1月：鄂东抗日军政学校成立
+                            
+                            在蕲春成立，培养基层军政干部，李先念兼任校长。</p>
+                            
+                           <p> 1940年5月：黄冈县抗日民主政府成立
+                            
+                            中共在黄冈县（今团风县）建立首个县级抗日政权，推行“三三制”民主选举。</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">1941年—1942年</div>
+                        <a class="kangzhan" href="https://www.krzzjn.com/show-41-10073.html"><h3>根据地巩固与反“扫荡”</h3></a>
+                        <p>1941年1月：新四军第五师鄂东独立团成立
+                           整合黄冈地方武装，开展长江沿岸游击战，破坏日军运输线。</p>
+                        <p>  1941年4月：蕲广边反“扫荡”
+                        日伪军2000余人进攻蕲春、广济根据地，新四军采取“麻雀战”战术，歼敌300余人。</p>
+                         <p>1942年5月：张家塝惨案
+                        日军在蕲春张家塝村屠杀村民120余人，烧毁房屋百余间，激起军民强烈反抗。</p>
+                        <p>1942年10月：粉碎“百日清乡”
+                        新四军第五师联合民兵，挫败日伪军在黄梅、广济的“清乡”计划。</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">1943年—1944年</div>
+                        <a class="kangzhan" href="https://www.krzzjn.com/show-42-15651.html"><h3>战略相持与局部反攻</h3></a>
+                        <p>1943年3月：高山铺伏击战
+                        新四军在蕲春高山铺设伏，歼灭日军运输队，缴获大批物资。</p>
+                        <p>1943年9月：恢复浠（水）罗（田）边区
+                        新四军开辟浠水、罗田边界新区，打通与大别山根据地的联系。</p>
+                        <p>1944年5月：春季攻势
+                        新四军第五师在黄梅、广济等地拔除日伪据点12个，扩大解放区。</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">1945年</div>
+                        <a class="kangzhan" href="https://www.krzzjn.com/show-455-54267.html"><h3>抗战胜利与受降斗争</h3></a>
+                        <p>8月15日：日本宣布投降，新四军第五师命令黄冈日伪军缴械。</p>
+                        <p>8月下旬：国民党军抢占黄州、团风等城镇，阻挠新四军受降，爆发小规模冲突。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section_inner_three">
+            
+                <div class="lunbo1">
+                    <!-- 外层的div，包含图片列表 -->
+                    <h2 class="index_zyzy">黄冈重要战役</h2>
+                    <div class="smallBox">
+                        <div class="bigBox">
+                            <!--第一页-->
+                            <div class="gequ">
+                                <div class="tjzysbwz">
+                                    <div class="tjztp">
+                                    <img src="./图片/高山铺战役.png" alt="田家镇要塞保卫战"></div>
+                                    <div class="tjzneirong"><a>高山铺战役</a>
+                                    
+                                    <p>1947年6月底，由刘伯承、邓小平率领的晋冀鲁豫野战军主力第一、第二、第三、第六纵队，从晋冀鲁豫战场渡过黄河后，于8月27日进入大别山。国民党军于9月上旬以23个旅的兵力跟进，企图将刘邓野战军逐出大别山地区。国民党军统帅部为防止刘邓野战军渡江南下，急调整编第四十师及第八十二旅共5个团于10月24日经浠水向广济兼程前进。刘邓野战军在分析敌情后，决定针对该部国民党军孤军冒进、骄纵轻敌的弱点，迅速集中17个团的兵力，在其必经的高山铺地区展开伏击战。此次战役歼灭国民党军1.2万余人，其中俘敌9000余人，缴获大批军用物资。这是刘邓大军挺进大别山后的第一个重大胜利，对刘邓野战军在大别山站稳脚跟、创建根据地有着重要意义。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gequ">
+                                <div class="tjzysbwz">
+                                    <div class="tjztp">
+                                    <img src="./图片/田家镇要塞保卫战.webp" alt="田家镇要塞保卫战"></div>
+                                    <div class="tjzneirong"><a>田家镇要塞保卫战</a>
+                                    <p>田家镇保卫战是1938年武汉会战的重要一役。由于武汉本身无险可守，田家镇以其独特的地理位置成为拱卫武汉的外围要域，蒋介石曾多次要求国军固守田家镇,以保卫大武汉。1938年8月30日至9月14 日，日军进攻广济县城，中日双方展开的广济县城争夺战﹔9月15日至9月29日﹐日军完成对田家镇的多面包围后﹐猛攻田家镇，国民党军在此进行了惨烈的田家镇保卫战.它作为武汉会战中的最重要的战役之一，在中国抗日战争史上占有不可忽视的地位。首先，它是保卫武汉的关键性战役，对武汉的安危有直接的重大影响。这一战役阻击了日军向武汉的推进，延缓了其对武汉的占领。其次，在这次战役中，中国军队牵制了数十万日本陆海空军，使之迟迟不能进攻武汉市区，也不能脱身援助其他战场的日军。再次，守卫田家镇的国军将士强烈的爱国热情和不怕牺牲、英勇顽强的战斗精神值得后世崇敬和铭记。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="btnlist2">
+                        <span class="active2" onclick="goToSlide1(0)"></span>
+                        <span onclick="goToSlide1(1)"></span>
+                    </ul>
+                    <button id="leftbtn2" onclick="prevSlide1()"><a>&lt;</a></button>
+                    <button id="rightbtn2" onclick="nextSlide1()"><a>&gt;</a></button>
+                </div>            
+        </div> 
+        <div class="section_inner_four">
+            <h2 class="index_xx">创意游戏：剧本杀</h2>
+        <div class="jubensha">
+            <div class="fenghuogucheng">
+                <h4>剧情前提</h4>
+                <p>1943 年 5 月，日军对鄂东根据地发动 “铁壁合围” 扫荡前夕，新四军秘密筹备的 “破晓行动”（炸毁日军军火库）因情报泄露失败，一支游击队全员牺牲。六位与事件相关者被召集至已成废墟的祠堂，必须在天亮前找出内鬼，否则日军将血洗周边村庄。</p>
+            </div>
+            <div class="renwu">
+                <h3>人物详情</h3>
+            <div class="zhujue">
+            <div class="zhoumingyuan">
+                <a href="../剧本杀/周明远.html" target="_blank"><strong>周明远（男，32 岁）</strong></a>
+                <p>新四军第五师某连连长，毕业于黄埔军校。武汉会战的经历让他背负心理创伤，在 “破晓行动” 中陷入自我怀疑与真相追寻。</p>
+            </div>
+            <div class="shenqiuyue">
+                <a href="../剧本杀/沈秋月.html" target="_blank"><strong>沈秋月（女，26 岁）</strong></a>
+                <p>“济世堂” 药铺老板娘，中共鄂东地下党资深联络员。背负双重绝密任务，在保护情报与人员中周旋。</p>
+            </div>
+            <div class="chenshouren">
+                <a href="../剧本杀/陈守仁.html" target="_blank"><strong>陈守仁（男，40 岁）</strong></a>
+                <p>黄冈乡绅，维持会副会长。表面为日军效力，实则暗中帮助抗日，在大义与人伦间挣扎。</p>
+            </div>
+            <div class="zhaotieshan">
+                <a href="../剧本杀/赵铁山.html" target="_blank"><strong>赵铁山（男，35 岁）</strong></a>
+                <p>伪军保安团团长，军统 “死间”。以汉奸身份潜伏，传递重要情报，身份神秘。</p>
+            </div>
+            <div class="linxiaoman">
+                <a href="../剧本杀/林小满.html" target="_blank"><strong>林小满（男，18 岁）</strong></a>
+                <p>省立黄冈中学学生，“晨星社” 发起人。因传单失误陷入自责，为救父与各方势力接触。</p>
+            </div>
+            <div class="tengtianjianyi">
+                <a href="../剧本杀/藤田建一.html" target="_blank"><strong>藤田健一（男，30 岁）</strong></a>
+                <p>日军翻译官，台湾雾社起义幸存者后代。被迫为日军工作，内心渴望救赎。</p>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="content" style="padding-right: 100px;">
+                        <h2>抗战胜利纪念</h2>
+                        <p>铭记历史，缅怀先烈，珍爱和平，开创未来。</p>
+                    </div>
+
+                    <div class="content1">
+                        <h2>联系我们</h2>
+                        <p>邮箱: 2150653124@qq.com</p>
+                        <hr>
+                        <p>微信：t52333333</p>
+                    </div>
+                    <div class="content2">
+                        <div><img src="./PixPin_2025-04-15_20-41-14.png" alt=""></div>
+                        <div class="yc1"><img src="./wdlxfs.jpg" alt=""></div>
+                    </div>
+                    <div class="content3">
+                        <div class=""><img src="./PixPin_2025-04-15_20-41-36 copy.png" alt=""></div>
+                        <div class="yc2"><img src="./rkdy.jpg" alt=""></div>
+                    </div>
+                    <div class="content4">
+                        <div class=""><img src="./PixPin_2025-04-15_20-41-50.png" alt=""></div>
+                        <div class="yc3"><img src="./wb.jpg" alt=""></div>
+                    </div>
+
+                </div>
+                <!-- <hr class="bg"> -->
+                <div class="center">
+                    <a class="aaa">&copy; 2025 抗日战争胜利与世界反法西斯战争纪念网之黄冈</a>
+                    <hr>
+                    <a class="ppp">制作人：生信2401荣可 生信2401梁润悦</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+         window.onload = function(){}
+            var currentIndex = 0;
+            const slides = document.querySelectorAll('.tupian1');
+            const indicators = document.querySelectorAll('.btnlist span')
+            const totalSlides = slides.length;
+
+            function showSlide(tupian1) {
+                const carouselInner = document.querySelector('.tupian');
+                const offset = -tupian1 * 100 / 3;
+                carouselInner.style.transform = `translateX(${offset}%)`;
+
+                
+                //小圆点
+                indicators.forEach((indicator, i) => {
+                    if (i === tupian1 ) {
+                        indicator.classList.add('active');
+                    } else {
+                        indicator.classList.remove('active');
+                    }
+                }); 
+            }
+        
+            function nextSlide() {//右按钮
+                currentIndex = (currentIndex + 1) % totalSlides;
+                showSlide(currentIndex);
+            }
+
+            function prevSlide() {//左按钮
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                showSlide(currentIndex);
+            }
+
+            // 跳转到指定索引的图片
+            function goToSlide(tupian1) {
+                currentIndex = tupian1;
+                showSlide(currentIndex);
+            }
+            // 第二个轮播图
+            var currentIndex1 = 0;
+            const slide1s = document.querySelectorAll('.gequ');
+            const indicator1s = document.querySelectorAll('.btnlist2 span')
+            const totalSlide1s = slide1s.length;
+
+            function showSlide1(gequ) {
+                const carouselInner1 = document.querySelector('.bigBox');
+                const offset1 = - gequ* 50;
+                carouselInner1.style.transform = `translateX(${offset1}%)`;
+
+
+                //小圆点
+                indicator1s.forEach((indicator1, i1) => {
+                    if (i1 === gequ ) {
+                        indicator1.classList.add('active2');
+                    } else {
+                        indicator1.classList.remove('active2');
+                    }
+                }); 
+
+            }
+
+            function nextSlide1() {//右按钮
+                currentIndex1 = (currentIndex1 + 1) % totalSlide1s;
+                showSlide1(currentIndex1);
+            }
+
+            function prevSlide1() {//左按钮
+                currentIndex1 = (currentIndex1 - 1 + totalSlide1s) % totalSlide1s;
+                showSlide1(currentIndex1);
+            }
+            // 跳转到指定索引的图片
+            function goToSlide1(gequ) {
+                currentIndex1 = gequ;
+                showSlide1(currentIndex1);
+            }
+    </script>
+</body>
+</html>
